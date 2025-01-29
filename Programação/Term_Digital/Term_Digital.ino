@@ -19,7 +19,8 @@ void setup(){
     Serial.begin(9600);
 
     if (!oled.begin(SSD1306_SWITCHCAPVCC, 0x3C)){
-        Serial.println(F("SSD1306 allocation failed"));
+        Serial.println(F("Display failed"));
+
         while (true)
             ;
     }
